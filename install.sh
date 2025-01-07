@@ -81,6 +81,7 @@ unzip agent-linux.zip -d /opt/titanagent
 # Крок 6. Дійте по інструкції нижче:
 ######################################################
 purple_echo "=================================================="
+purple_echo "Дійте по інструкції нижче:"
 purple_echo "Створіть Screen: screen -S titan"
 purple_echo "Перейдіть в папку Titan:  cd /opt/titanagent"
 purple_echo "Запустіть: ./agent --working-dir=/opt/titanagent --server-url=https://test4-api.titannet.io --key=<your-key>"
