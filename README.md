@@ -1,3 +1,7 @@
+#update
+
+# Seems for now node only for china region, another region soon.
+
 # Titan Network Galelio Testnet Node
 ![image](https://pbs.twimg.com/media/GgsaYmjWoAAQA_t?format=jpg&name=large)
 
