@@ -22,17 +22,14 @@ https://test4.titannet.io/
 source <(wget -qO- https://raw.githubusercontent.com/abzalliance/Titan-Network-Galelio-Testnet-Node/main/install.sh)
 ```
 ## Note:
-
+**Follow the further instructions**
 **Replace `your-key` with the key you**
 **After Run don't forget Copy your Node ID**
-
-## Out screen:
-**CTRL + A D**
 
 ## Check status your Node ID Agent:
 ```bash
 https://test4.titannet.io/nodeDetails
   ```
+![image](https://i.postimg.cc/DZM9zjKT/Screenshot-6.png)
 
 # Done!
-
