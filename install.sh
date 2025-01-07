@@ -78,21 +78,12 @@ purple_echo "Розпаковуємо агент у /opt/titanagent..."
 unzip agent-linux.zip -d /opt/titanagent
 
 ######################################################
-# Крок 6. Зчитування ключа та запуск у screen
+# Крок 6. Дійте по інструкції нижче:
 ######################################################
-purple_echo "Введіть свій ключ (скопіюйте або введіть вручну):"
-read -r USER_KEY
-
-purple_echo "Створюємо screen-сесію 'titan' та запускаємо агента..."
-
-# Створюємо порожню сесію screen у фоні
-screen -dmS titan
-
-# Усередині сесії виконуємо перехід у теку та запускаємо агент
-screen -S titan -p 0 -X stuff "cd /opt/titanagent && ./agent --working-dir=/opt/titanagent --server-url=https://test4-api.titannet.io --key=$USER_KEY\n"
-
 purple_echo "=================================================="
-purple_echo "Агент запущено у screen-сесії 'titan'."
-purple_echo "Приєднатися до сесії:  screen -r titan"
-purple_echo "Скопіюйте свій Node ID, потім вийдіть CTRL + A, D"
+purple_echo "Створіть Screen: screen -S titan"
+purple_echo "Перейдіть в папку Titan:  cd /opt/titanagent"
+purple_echo "Запустіть: ./agent --working-dir=/opt/titanagent --server-url=https://test4-api.titannet.io --key=<your-key>"
+purple_echo "Де: --key=<your-key>, вставте свій ключ."
+purple_echo "Готово!"
 purple_echo "=================================================="
